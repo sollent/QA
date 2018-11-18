@@ -60,7 +60,7 @@ public class Main {
                         int groupId = input.nextInt();
                         boolean flag = false;
                         System.out.println();
-                        System.out.println("---------------------------------------------------\n");
+                        System.out.println("-----------------------------------------------------------------------------\n");
                         for(int i = 0; i < groups.length; i++){
                             if(groups[i].getId() == groupId){
                                 groups[i].printGroupShortInfoemation();
@@ -71,7 +71,7 @@ public class Main {
                         if(!flag)
                             System.out.print("There are no group with such id...");
                         System.out.println();
-                        System.out.println("---------------------------------------------------\n");
+                        System.out.println("-----------------------------------------------------------------------------\n");
                     } catch (NullPointerException e){
                         System.out.println("There are no something groups still...\n");
                     }
