@@ -26,7 +26,7 @@ public class Student {
 
     private void setMarks(){
         Scanner input = new Scanner(System.in);
-        System.out.println("How many marks has this student?");
+        System.out.println("How many marks has this student? What do you think about it, man?");
         int number = input.nextInt();
         this.marks = new int[number];
         System.out.println("Initial all marks, please:");
