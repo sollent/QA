@@ -7,7 +7,8 @@ public class Main {
     private static Group[] groups;
 
     public static void main(String[] args) {
-
+	
+	// It's flags, man!!!
         boolean quit = false;
         boolean firstVisited = false;
 
