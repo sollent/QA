@@ -25,9 +25,9 @@ public class Main {
             System.out.println("\nWhat do you want to do, man?\n");
 
             Scanner input = new Scanner(System.in);
-            int opt = input.nextInt();
+            int option = input.nextInt();
 
-            switch(opt){
+            switch(option){
                 case 1:
                     System.out.println("How many groups you want to create, man?");
                     int number = input.nextInt();
