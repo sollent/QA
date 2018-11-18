@@ -11,7 +11,7 @@ public class Main {
         boolean quit = false;
         boolean firstVisited = false;
 
-        while (!quit){
+        while (!quit){ // If the flag of quit variable is false program will continue
 
             if(!firstVisited)
                 System.out.println("1. Create new group and students with marks for the group");
