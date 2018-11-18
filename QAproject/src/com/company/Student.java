@@ -12,10 +12,10 @@ public class Student {
     private double average;
 
     public Student(){
-        this.setName();
+        this.setStudentName();
     }
 
-    private void setName(){
+    private void setStudentName(){
         Scanner input = new Scanner(System.in);
         System.out.println("Enter first name, please: ");
         this.firstName = input.nextLine();
