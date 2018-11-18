@@ -21,14 +21,14 @@ public class Main {
                     "4. View all groups information\n" +
                     "5. Quit\n");
 
-            System.out.println("\nWhat do you want to do?\n");
+            System.out.println("\nWhat do you want to do man?\n");
 
             Scanner input = new Scanner(System.in);
             int option = input.nextInt();
 
             switch(option){
                 case 1:
-                    System.out.println("How many groups you want to create?");
+                    System.out.println("How many groups you want to create, man?");
                     int number = input.nextInt();
                     groups = new Group[number];
                     number = groups.length;
