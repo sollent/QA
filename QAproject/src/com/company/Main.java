@@ -8,7 +8,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        boolean quit = false; // It is the flag for controlling the end of the programm
+        // It is flags
+	boolean quit = false; // It is the flag for controlling the end of the programm
         boolean firstVisited = false; // It is the flag that will be replce to true after chosed first point by user.
 
         while (!quit){ // If the flag of quit variable is false program will continue
