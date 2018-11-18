@@ -39,15 +39,15 @@ public class Group {
 
     public void printGroupShortInfoemation(){
         System.out.println("Group id: " + this.id);
-        System.out.println("Count of students: " + this.students.length);
+        System.out.println("Count of all students: " + this.students.length);
         System.out.println("Average score of the group: " + this.averageMark);
     }
 
     public void setAverageMark(){
         double[] averageScores = new double[this.students.length];
-        for(int i = 0; i < this.students.length; i++){
-            double averageStudentScore = this.students[i].getAverage();
-            averageScores[i] = averageStudentScore;
+        for(int a = 0; a < this.students.length; a++){
+            double averageStudentScore = this.students[a].getAverage();
+            averageScores[a] = averageStudentScore;
         }
         this.averageMark = Arrays.stream(averageScores).sum() / this.students.length;
     }
