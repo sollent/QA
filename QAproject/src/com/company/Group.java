@@ -15,7 +15,7 @@ public class Group {
 
     private void setStudents(){
         Scanner input = new Scanner(System.in);
-        System.out.println("How many student will be contain the group?");
+        System.out.println("How many student will be contain the group, man?");
         int number = input.nextInt();
         this.students = new Student[number];
         System.out.println("Initial all students, please:");

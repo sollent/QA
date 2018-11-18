@@ -21,7 +21,7 @@ public class Main {
                     "4. View all groups information\n" +
                     "5. Quit\n");
 
-            System.out.println("\nWhat do you want to do man?\n");
+            System.out.println("\nWhat do you want to do, man?\n");
 
             Scanner input = new Scanner(System.in);
             int option = input.nextInt();
