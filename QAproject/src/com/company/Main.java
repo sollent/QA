@@ -11,7 +11,7 @@ public class Main {
         boolean quit = false; // It is the flag for controlling the end of the programm
         boolean firstVisited = false; // It is the flag that will be replce to true after chosed first point by user.
 
-        while (!quit){
+        while (!quit){ // If the flag of quit variable is false program will continue
 
             if(!firstVisited)
                 System.out.println("1. Create new group and students with marks for the group");
