@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // It is flags
+        // It's flags
 	boolean quit = false; // It is the flag for controlling the end of the programm
         boolean firstVisited = false; // It is the flag that will be replce to true after chosed first point by user.
 
