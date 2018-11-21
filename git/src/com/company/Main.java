@@ -7,10 +7,10 @@ public class Main {
     private static Group[] groups;
 
     public static void main(String[] args) {
-
-        // It's flags
-	boolean quit = false; // It is the flag for controlling the end of the programm
-        boolean firstVisited = false; // It is the flag that will be replce to true after chosed first point by user.
+	
+	// It's flags, man!!!
+        boolean quit = false;
+        boolean firstVisited = false;
 
         while (!quit){ // If the flag of quit variable is false program will continue
 
