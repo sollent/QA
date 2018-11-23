@@ -5,8 +5,11 @@ import org.junit.Before;
 
 public class BaseTest {
 
+    protected Triangle triangle;
+
     @Before
     public void start(){
+        triangle = new Triangle();
         System.out.println("Start test");
     }
 
