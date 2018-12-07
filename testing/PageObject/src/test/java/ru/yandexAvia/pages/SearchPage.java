@@ -30,6 +30,9 @@ public class SearchPage {
     @FindBy(css = ".form-options_kb__passengers-adults button.passengers_kb__increase")
     private WebElement adultPlusButton;
 
+    @FindBy(css = ".form-options_kb__passengers-infant button.passengers_kb__increase")
+    private WebElement infantPlusButton;
+
     @FindBy(css = "div.search-form_kb__button-find>button.y-button")
     private WebElement searchButton;
 
@@ -52,13 +55,13 @@ public class SearchPage {
         calendarButton.click();
     }
 
-    public void selectDepartureDate(String departureDay, String departureMonth){
-        WebElement departure = driver.findElement(By.cssSelector("div[data-date='" + departureDay + "'][data-month='" + departureMonth + "']"));
+    public void selectDepartureDate(String departureDay, String departureMonth, String departureYear){
+        WebElement departure = driver.findElement(By.cssSelector("div[data-date='" + departureDay + "'][data-month='" + departureMonth + "'][data-year='" + departureYear + "']"));
         departure.click();
     }
 
-    public void selectArrivalDate(String arrivalDay, String arrivalMonth){
-        WebElement arrival = driver.findElement(By.cssSelector("div[data-date='" + arrivalDay + "'][data-month='" + arrivalMonth + "']"));
+    public void selectArrivalDate(String arrivalDay, String arrivalMonth, String arrivalYear){
+        WebElement arrival = driver.findElement(By.cssSelector("div[data-date='" + arrivalDay + "'][data-month='" + arrivalMonth + "'][data-year='" + arrivalYear + "']"));
         arrival.click();
     }
 
@@ -69,6 +72,11 @@ public class SearchPage {
     public void addAdults(Integer number){
         for(int i = 0; i < number; i++)
             adultPlusButton.click();
+    }
+
+    public void addInfant(Integer number){
+        for(int i = 0; i < number; i++)
+            infantPlusButton.click();
     }
 
     public void clickOnSearch(){
