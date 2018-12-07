@@ -1,6 +1,7 @@
 package ru.yandexAvia.pages;
 
 import org.junit.After;
+import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
@@ -32,7 +33,11 @@ public class BaseTest {
 
     @After
     public void quitTest(){
-        driver.quit();
         System.out.println("Test has been completed");
+    }
+
+    @AfterClass
+    public static void quit(){
+        driver.quit();
     }
 }
