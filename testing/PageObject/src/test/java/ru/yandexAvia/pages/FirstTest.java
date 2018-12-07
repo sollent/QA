@@ -19,9 +19,9 @@ public class FirstTest extends BaseTest{
         searchPage.typeInputTo("Нижний Новгород");
         searchPage.clickOnCalendar();
         Thread.sleep(1000);
-        searchPage.selectDepartureDate("27", "10");
+        searchPage.selectDepartureDate("20", "11");
         Thread.sleep(1000);
-        searchPage.selectArrivalDate("21", "11");
+        searchPage.selectArrivalDate("27", "11");
         Thread.sleep(1000);
         searchPage.clickOnPeople();
         Thread.sleep(1000);
