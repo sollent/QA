@@ -27,7 +27,7 @@ public class BaseTest {
 
     @Before
     public void startTest(){
-        System.out.println("Start test");
+        System.out.println("Starting test");
     }
 
     @After
