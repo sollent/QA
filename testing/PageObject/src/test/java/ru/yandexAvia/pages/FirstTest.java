@@ -2,6 +2,7 @@ package ru.yandexAvia.pages;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
+import static org.junit.Assert.*;
 
 public class FirstTest extends BaseTest{
 
@@ -19,15 +20,24 @@ public class FirstTest extends BaseTest{
         searchPage.typeInputTo("Нижний Новгород");
         searchPage.clickOnCalendar();
         Thread.sleep(1000);
-        searchPage.selectDepartureDate("20", "11");
+        searchPage.selectDepartureDate("29", "11");
         Thread.sleep(1000);
-        searchPage.selectArrivalDate("27", "11");
+        searchPage.selectArrivalDate("30", "11");
         Thread.sleep(1000);
         searchPage.clickOnPeople();
         Thread.sleep(1000);
         searchPage.addAdults(4);
         Thread.sleep(500);
         searchPage.clickOnSearch();
+    }
+
+    @Test
+    public void invalidFromAndToFields(){
+        searchPage.typeInputTo("Испаниозе");
+        searchPage.typeInputFrom("Новосибирский край");
+        searchPage.clickOnSearch();
+        String title = driver.getTitle();
+        assertEquals(title, "Некорректные параметры поиска");
     }
 
 }

@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class SearchPage {
 
     public WebDriver driver;
@@ -15,6 +17,9 @@ public class SearchPage {
 
     @FindBy(id = "to")
     private WebElement inputTo;
+
+    @FindBy(css = "._tooltip-type_error")
+    private List<WebElement> inputErrors;
 
     @FindBy(className = "datepicker-inputs_kb")
     private WebElement calendarButton;
@@ -69,4 +74,6 @@ public class SearchPage {
     public void clickOnSearch(){
         searchButton.click();
     }
+
+
 }
