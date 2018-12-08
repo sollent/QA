@@ -66,7 +66,7 @@ public class FirstTest extends BaseTest{
         searchPage.clickOnSearch();
         WebElement errorAlert = driver.findElement(By.cssSelector(".y-tooltip__content"));
         String errorText = errorAlert.getText().toString();
-        assertEquals(errorText, "ыберите различные пункты отправления и прибытия");
+        assertEquals(errorText, "Выберите различные пункты отправления и прибытия");
     }
 
     @Test
