@@ -16,7 +16,7 @@ public class BaseTest {
     public static void initialDriver(){
         System.setProperty("webdriver.chrome.driver", "/home/sollent/chromedriver");
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
+//        options.addArguments("--headless");
         options.addArguments("start-maximized"); // open Browser in maximized mode
         options.addArguments("disable-infobars"); // disabling infobars
         options.addArguments("--disable-extensions"); // disabling extensions
